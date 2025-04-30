@@ -20,7 +20,7 @@
 #
 #     https://www.nipreps.org/community/licensing/
 #
-"""Utility functions for fMRIPost-template."""
+"""Utility functions for fMRIPost-resample."""
 
 import logging
 

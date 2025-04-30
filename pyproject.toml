@@ -57,7 +57,7 @@ maint = [
 ]
 
 # Aliases
-all = ["fmripost_template[doc,maint,test]"]
+all = ["fmripost_resample[doc,maint,test]"]
 
 [project.urls]
 Documentation = "https://github.com/nipreps/fmripost-template#readme"
@@ -65,7 +65,7 @@ Issues = "https://github.com/nipreps/fmripost-template/issues"
 Source = "https://github.com/nipreps/fmripost-template"
 
 [project.scripts]
-fmripost-template = "fmripost_template.cli.run:main"
+fmripost-template = "fmripost_resample.cli.run:main"
 
 [tool.hatch.metadata]
 allow-direct-references = true
@@ -74,15 +74,15 @@ allow-direct-references = true
 source = "vcs"
 
 [tool.hatch.build.hooks.vcs]
-version-file = "src/fmripost_template/_version.py"
+version-file = "src/fmripost_resample/_version.py"
 
 [tool.hatch.build.targets.sdist]
 exclude = [".git_archival.txt"]  # No longer needed in sdist
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/fmripost_template"]
+packages = ["src/fmripost_resample"]
 exclude = [
-  "src/fmripost_template/tests/data",  # Large test data directory
+  "src/fmripost_resample/tests/data",  # Large test data directory
   "tests/data", # Large test data directory
 ]
 
@@ -93,7 +93,7 @@ dependencies = [
 ]
 
 [tool.hatch.envs.default.scripts]
-cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/fmripost_template --cov=tests {args}"
+cov = "pytest --cov-report=term-missing --cov-config=pyproject.toml --cov=src/fmripost_resample --cov=tests {args}"
 no-cov = "cov --no-cov {args}"
 
 [tool.hatch.envs.type]
@@ -129,7 +129,7 @@ python = ["311", "312"]
 branch = true
 parallel = true
 omit = [
-  "src/fmripost_template/__about__.py",
+  "src/fmripost_resample/__about__.py",
 ]
 
 [tool.coverage.report]

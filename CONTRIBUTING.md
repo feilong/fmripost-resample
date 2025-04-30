@@ -1,4 +1,4 @@
-# Contributing to *fMRIPost-template*
+# Contributing to *fMRIPost-resample*
 
-*fMRIPost-template* is a project of the
+*fMRIPost-resample* is a project of the
 [*NiPreps* Community, which specifies the contributing guidelines](https://www.nipreps.org/community/CONTRIBUTING/).

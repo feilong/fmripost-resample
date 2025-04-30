@@ -1,4 +1,4 @@
 24.0.0 ()
 =========
 
-fMRIPost-template's initial release.
+fMRIPost-resample's initial release.

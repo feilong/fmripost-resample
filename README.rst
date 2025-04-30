@@ -1,5 +1,5 @@
 #################
-fMRIPost-template
+fMRIPost-resample
 #################
 
 A generic fMRIPost workflow.
@@ -8,7 +8,7 @@ A generic fMRIPost workflow.
 Overview
 ********
 
-fMRIPost-template is a template repository that can be used to create new fMRIPost workflows.
+fMRIPost-resample is a template repository that can be used to create new fMRIPost workflows.
 
 The workflows and functions in this repository are designed to implement the majority of
 general-purpose steps in an fMRIPost pipeline.
@@ -53,12 +53,12 @@ Usage
 
 If you use this template to create a new fMRIPost workflow, you will need to:
 
-1.  Replace all instances of ``fmripost_template`` with the name of your new workflow.
-2.  Replace all instances of ``fMRIPost-template`` with the name of your new workflow.
+1.  Replace all instances of ``fmripost_resample`` with the name of your new workflow.
+2.  Replace all instances of ``fMRIPost-resample`` with the name of your new workflow.
 3.  Modify the workflows and interfaces to apply your desired processing steps.
 4.  Update the documentation to reflect the new workflow.
 
 Please also include something like the following in your boilerplate:
 
 > Data were postprocessed using *fMRIPost-<name>*,
-> which is based on *fMRIPost-template* ([cite fMRIPost-template version and DOI here]).
+> which is based on *fMRIPost-resample* ([cite fMRIPost-resample version and DOI here]).
